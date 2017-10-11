@@ -59,3 +59,5 @@ void deleteAfter(listElement* after){
   free(delete->data);
   free(delete);
 }
+
+int length(listElement* list){	int count = 0;	while (list != NULL) {		count++;			list = list->next;	}	return count;}void Push(listElement** list, char* data, size_t size) {	listElement* newNode = malloc(size);	newNode->data = data;	newNode->next = list;	*list = newNode;}listElement* pop(listElement* list) {	listElement **temp = list;	return list;	temp = list->next;}
